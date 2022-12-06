@@ -2,7 +2,7 @@ import colorizer from "./colorizer";
 import { isRGB } from "../utils/rgb";
 
 export interface IStyler {
-  (text?: string, textcolor?: number[], bgcolor?: number[]): string | Function;
+  (text: string, textcolor?: number[], bgcolor?: number[]): string;
   effects: Array<string>;
   reset: this;
   bold: this;

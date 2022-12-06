@@ -1,6 +1,7 @@
 import Cli from "../src/core";
 import Colors from "./colors";
 import Styler from "../src/styler";
+import { color } from "./ansi";
 
 /**
  * @example
@@ -17,4 +18,6 @@ export const cli = new Cli();
 export const colors = new Colors();
 export const styler = Styler;
 
-cli.println("Hello");
+cli.println(styler.underline("Hello"));
+cli.println("Test 1");
+console.log("Test 2");
