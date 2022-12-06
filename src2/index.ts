@@ -17,7 +17,3 @@ import { color } from "./ansi";
 export const cli = new Cli();
 export const colors = new Colors();
 export const styler = Styler;
-
-cli.println(styler.underline("Hello"));
-cli.println("Test 1");
-console.log("Test 2");
