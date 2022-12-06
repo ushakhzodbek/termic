@@ -1,6 +1,6 @@
 export interface IStyler {
-    (text?: string, textcolor?: number[], bgcolor?: number[]): string | Function;
-    effects: Array<string>;
+    (text: string, textcolor: number[], bgcolor: number[]): string | Function;
+    effects: Array<number[]>;
     reset: this;
     bold: this;
     dim: this;
@@ -11,5 +11,4 @@ export interface IStyler {
     hidden: this;
     crossedout: this;
 }
-declare const Styler: IStyler;
-export default Styler;
+export declare function Styler(text: string): void;

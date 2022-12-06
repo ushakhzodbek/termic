@@ -5,8 +5,9 @@
   "exports": "./dist/index.js",
   "types": "./dist/src/index.d.ts",
   "scripts": {
-    "start": "node .",
-    "build": "webpack"
+    "start": "node ./dist/index.js",
+    "build": "webpack",
+    "clean": "rd /s /q dist"
   },
   "repository": {
     "type": "git",

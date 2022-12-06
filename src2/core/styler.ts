@@ -53,27 +53,25 @@ console.log();
 */
 
 export interface IStyler {
-    (text: string, textcolor: number[], bgcolor: number[]): string | Function;
-    effects: Array<number[]>;
-    reset: this;
-    bold: this;
-    dim: this;
-    italic: this;
-    underline: this;
-    blink: this;
-    inverse: this;
-    hidden: this;
-    crossedout: this;
+  (text: string, textcolor: number[], bgcolor: number[]): string | Function;
+  effects: Array<number[]>;
+  reset: this;
+  bold: this;
+  dim: this;
+  italic: this;
+  underline: this;
+  blink: this;
+  inverse: this;
+  hidden: this;
+  crossedout: this;
 }
 
-class StylerAPI{
-    get reset () {
-        return new StylerAPI;
-    }
+class StylerAPI {
+  get reset() {
+    return new StylerAPI();
+  }
 }
 
-export function Styler(text) {
-    
-}
+export function Styler(text: string) {}
 
-Object.setPrototypeOf(Styler, new StylerAPI);
+Object.setPrototypeOf(Styler, new StylerAPI());
